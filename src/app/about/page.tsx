@@ -8,7 +8,7 @@ export default function About() {
   return (
     <>
           <MobileNav />
-       <section className="min-h-screen flex flex-col justify-center items-center px-6 py-12 bg-gradient-to-b from-[#101928] to-[#0B03F7]/20 text-white">
+       <section className="min-h-screen flex flex-col justify-center items-center px-6 py-12 bg-gradient-to-b from-[#101928] to-[#0B03F7]/20 text-[#00BCFF]">
       <motion.h2
         className="text-4xl md:text-5xl font-bold text-center mb-10"
         initial={{ opacity: 0, y: -20 }}
