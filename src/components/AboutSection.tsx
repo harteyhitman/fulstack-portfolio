@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export default function About() {
   return (
-    <div className="py-10 flex align-right justify-center md:justify-between  flex-col md:flex-row  md:gap-2 md:py-10">
+    <div className="py-10 flex align-cnter justify-center md:justify-between  flex-col md:flex-row  md:gap-2 md:py-10">
         <motion.h2
         className="text-3xl md:text-4xl font-bold text-center mb-8"
         initial={{ opacity: 0, y: -20 }}
