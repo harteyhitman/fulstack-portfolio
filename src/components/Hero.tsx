@@ -13,15 +13,15 @@ export default function Hero() {
   return (
     <section className="px-5 gap-22 flex flex-col md:flex-row items-center justify-center md:justify-between  md:gap-32 md:py-10">
       {/* Text Block */}
-      <div className="text-center md:text-left space-y-6">
+      <div className="md:text-left text-center  space-y-6">
         <motion.h1
-          className="text-4xl md:text-6xl font-bold leading-tight"
+          className="text-4xl md:text-6xl  font-bold leading-tight"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.8 }}
         >
-          Hey, I'm  <span className="text-sky-500">Azeez Oyegoke</span>
+          Hey, I'm <br />  <span className="text-sky-500">Azeez Oyegoke</span>
         </motion.h1>
 
         <motion.p
