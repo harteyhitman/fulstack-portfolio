@@ -64,7 +64,7 @@ export default function Hero() {
         animate="visible"
         transition={{ delay: 0.9, duration: 0.8 }}
       >
-        <div className="w-70 h-70 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg border-2 md:justify-left border-white md:mr-34">
+        <div className="w-70 h-70 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg border-2 md:justify-between border-white">
           <Image
             src={avatar}
             alt="Azeez Oyegoke Avatar"
