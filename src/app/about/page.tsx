@@ -1,11 +1,14 @@
 'use client'
+import MobileNav from '@/components/MobileNav'
 import { motion } from 'framer-motion'
 import { FaLaptopCode, FaRocket, FaUsers } from 'react-icons/fa'
 import { MdDesignServices } from 'react-icons/md'
 
 export default function About() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center px-6 py-12 bg-gradient-to-b from-[#101928] to-[#0B03F7]/20 text-white">
+    <>
+          <MobileNav />
+       <section className="min-h-screen flex flex-col justify-center items-center px-6 py-12 bg-gradient-to-b from-[#101928] to-[#0B03F7]/20 text-white">
       <motion.h2
         className="text-4xl md:text-5xl font-bold text-center mb-10"
         initial={{ opacity: 0, y: -20 }}
@@ -56,6 +59,8 @@ export default function About() {
         <Feature icon={<FaUsers size={32} />} title="Team Player" desc="Strong communicator, great collaborator, always learning." />
       </motion.div>
     </section>
+    </>
+ 
   )
 }
 function Feature({ icon, title, desc }: { icon: React.ReactNode; title: string; desc: string }) {

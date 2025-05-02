@@ -6,10 +6,10 @@ import { HiMenuAlt3 } from 'react-icons/hi'
 import { BsSun, BsMoon } from 'react-icons/bs'
 
 const navLinks = [
-  { label: 'About Me', href: '#about' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Tech Stack', href: '#techstack' },
-  { label: 'Contact Me', href: '#contact' },
+  { label: 'About Me', href: '/about' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'Tech Stack', href: 'techstack' },
+  { label: 'Contact Me', href: '/contacts' },
 ]
 
 export default function MobileNav() {
