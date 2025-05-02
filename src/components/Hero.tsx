@@ -21,7 +21,7 @@ export default function Hero() {
           animate="visible"
           transition={{ duration: 0.8 }}
         >
-          Hey, I'm <br /> <span className="text-sky-500">Azeez Oyegoke</span>
+          Hey, I'm  <span className="text-sky-500">Azeez Oyegoke</span>
         </motion.h1>
 
         <motion.p
