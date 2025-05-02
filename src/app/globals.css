@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+::selection {
+  background-color: #38BDF8;
+  color: #0F0F0F;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+body {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+}
+/* Mobile menu overlay background */
+body {
+  overflow-x: hidden;
+}
+
+/* Optional: Add smooth transitions for the page */
+* {
+  transition: all 0.3s ease;
+}
+body {
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Light Theme (default) */
+body {
+  background: #FAFCFF;
+  color: #0D0E13 important;
+}
+
+/* Dark Theme override */
+body.dark {
+  background: #0D0E13;
+  color: #ffffff;
+}
+
+/* Optional nav-specific overrides */
+body.dark .nav-link {
+  color: #ffffff;
+}
+
+body.dark .nav-link:hover {
+  color: #0D0E13;
+}
