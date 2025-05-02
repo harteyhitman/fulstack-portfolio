@@ -1,5 +1,6 @@
 'use client'
 
+import MobileNav from '@/components/MobileNav'
 import { motion } from 'framer-motion'
 
 const projects = [
@@ -19,9 +20,11 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <section className="max-w-5xl mx-auto px-4 py-16">
+    <>
+          <MobileNav />
+      <section className="max-w-5xl mx-auto px-4 py-16">
       <motion.h1
-        className="text-4xl font-bold text-center mb-12"
+        className="text-4xl font-bold text-center mb-12 sm:color-[#101928]"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -60,5 +63,7 @@ export default function ProjectsPage() {
         ))}
       </div>
     </section>
+    </>
+  
   )
 }
