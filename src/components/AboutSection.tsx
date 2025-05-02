@@ -13,7 +13,7 @@ export default function About() {
       >
         About Me
       </motion.h2>
-        <section id="about" className="py- px-8 max-w-4xl mx-auto md:px-2">
+        <section id="about" className="py- px-8 max-w-2xl mx-auto md:px-2">
       <motion.div
         className="text-gray-400 text-lg leading-relaxed space-y-6 "
         initial={{ opacity: 0 }}
