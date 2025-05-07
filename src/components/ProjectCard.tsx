@@ -1,37 +1,49 @@
-'use client'
-import { motion } from 'framer-motion'
-import { useRef } from 'react'
+"use client";
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import Clubarant from "../../public/clubarant.png";
+import MusicPlay from "../../public/musicplay.png";
+import Image from "next/image";
 
 const projects = [
   {
-    title: 'Pichi Finance App',
-    description: 'MVP web app built with Next.js, Zustand, and SCSS for modern finance workflows.',
-    tech: ['Next.js', 'Zustand', 'SCSS'],
-    demo: 'https://pichi-finance.vercel.app',
-    code: 'https://github.com/your-username/pichi-finance',
+    title: "Clubarant",
+    description:
+      "MVP web app built with Next.js, Zustand, and SCSS for modern E-commerce workflows.",
+    tech: ["Next.js", "Nest.js", "Zustand", "SCSS" ],
+    demo: "https://digidish-two.vercel.app/",
+    code: "https://https://github.com/RogueDevTech/digidish-frontend",
+    image: Clubarant,
   },
   {
-    title: 'TaskMaster Pro',
-    description: 'Full-stack task management app built with NestJS and PostgreSQL.',
-    tech: ['NestJS', 'PostgreSQL', 'Next.js'],
-    demo: '',
-    code: '',
+    title: "Music Play",
+    description:
+      "Frontend music  app built with React caling music api  .",
+    tech: ["Reat.js", "Css", "Axios", "TailwindCSS"],
+    demo: "https://music-demo-app.vercel.app/",
+    code: "https://github.com/harteyhitman/music-demo-app",
+    image: MusicPlay,
   },
   {
-    title: 'Coalition Health UI',
-    description: 'Responsive dashboard with chart views and data fetching using Axios.',
-    tech: ['Next.js', 'Axios', 'TailwindCSS'],
-    demo: '',
-    code: '',
+    title: "Coalition Health UI",
+    description:
+      "Responsive dashboard with chart views and data fetching using Axios.",
+    tech: ["Next.js", "Axios", "TailwindCSS"],
+    demo: "https://mediaseach.vercel.app/",
+    code: "https://github.com/harteyhitman/media-search-fulstack",
+    image: Clubarant,
   },
   // Add more projects here
-]
+];
 
 export default function Projects() {
-  const carouselRef = useRef(null)
+  const carouselRef = useRef(null);
 
   return (
-    <section id="projects" className="py-14 px-4 md:px-0 justify-center items-center">
+    <section
+      id="projects"
+      className="py-14 px-4 md:px-0 justify-center items-center"
+    >
       <motion.h2
         className="text-3xl md:text-4xl font-bold text-center md:text-left mb-12"
         initial={{ opacity: 0, y: -20 }}
@@ -55,9 +67,17 @@ export default function Projects() {
             key={index}
             className="min-w-[320px] md:min-w-[400px] bg-[#1A1A1A] rounded-2xl p-6 snap-center shadow-lg border border-gray-800"
             whileHover={{ scale: 1.03 }}
-            transition={{ type: 'spring', stiffness: 300 }}
+            transition={{ type: "spring", stiffness: 300 }}
           >
-            <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
+            <h3 className="text-xl font-semibold text-white mb-2">
+              {project.title}
+            </h3>
+            <Image
+              src={project.image}
+              alt={project.title}
+              className="w-full h-auto rounded-lg mb-4"
+            />
+
             <p className="text-gray-400 mb-4">{project.description}</p>
             <div className="flex flex-wrap gap-2 mb-4">
               {project.tech.map((tech, i) => (
@@ -93,5 +113,5 @@ export default function Projects() {
         ))}
       </motion.div>
     </section>
-  )
+  );
 }
