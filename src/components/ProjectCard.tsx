@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import Clubarant from "../../public/clubarant.png";
 import MusicPlay from "../../public/musicplay.png";
+import MediaImg from "../../public/media-img.png";
 import Image from "next/image";
 
 const projects = [
@@ -25,13 +26,13 @@ const projects = [
     image: MusicPlay,
   },
   {
-    title: "Coalition Health UI",
+    title: "Media Search",
     description:
-      "Responsive dashboard with chart views and data fetching using Axios.",
-    tech: ["Next.js", "Axios", "TailwindCSS"],
+      "Responsive Search Media with audios and images  data fetching using Axios.",
+    tech: ["Next.js","Nest.js", "Axios", "TailwindCSS"],
     demo: "https://mediaseach.vercel.app/",
     code: "https://github.com/harteyhitman/media-search-fulstack",
-    image: Clubarant,
+    image: MediaImg,
   },
   // Add more projects here
 ];
