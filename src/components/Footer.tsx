@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="w-full bg-[#101928] text-white p-3 flex flex-col items-center space-y-4">
       <div className="flex space-x-6">
         <a
-          href="https://github.com/yourgithub"
+          href="https://github.com/harteyhitman"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#0B03F7] transition"
@@ -22,7 +22,7 @@ export default function Footer() {
           <FaGithub size={24} />
         </a>
         <a
-          href="https://linkedin.com/in/yourlinkedin"
+          href="https://www.linkedin.com/in/azeez-oyegoke-434716204/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#0B03F7] transition"

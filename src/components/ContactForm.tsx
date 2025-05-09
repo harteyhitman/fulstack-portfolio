@@ -110,12 +110,12 @@ export default function Contact() {
           </div>
 
           <div className="flex items-center gap-6 mt-6">
-            <a href="https://github.com/harteyhitman" target="_blank" rel="noopener noreferrer" title="Visit my LinkedIn profile">
+            <a href="https://github.com/harteyhitman" target="_blank" rel="noopener noreferrer" title="Visit my Github profile profile">
               <span className="text-2xl hover:text-[#0B03F7] transition">
                 <FaGithub />
               </span>
             </a>
-            <a href="https://www.linkedin.com/in/azeez-oyegoke-434716204/" target="_blank" rel="noopener noreferrer" title="Visit my Github profile profile">
+            <a href="https://www.linkedin.com/in/azeez-oyegoke-434716204/" target="_blank" rel="noopener noreferrer"   title="Visit my LinkedIn profile">
               <span className="text-2xl hover:text-[#0B03F7] transition">
                 <FaLinkedin />
               </span>
