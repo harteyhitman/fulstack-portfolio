@@ -2,19 +2,37 @@
 
 import MobileNav from '@/components/MobileNav'
 import { motion } from 'framer-motion'
-
+import Clubarant from "../../../public/clubarant.png";
+import MusicPlay from "../../../public/musicplay.png";
+import MediaImg from "../../../public/media-img.png";
+import Image from "next/image";
 const projects = [
-  {
-    title: 'Pichi Finance MVP',
-    description: 'A modern DeFi frontend built with Next.js and Zustand — includes live token swap simulation and wallet integration.',
-    tech: ['Next.js', 'Zustand', 'TailwindCSS'],
-    link: 'https://pichi.finance',
+{
+    title: "Clubarant",
+    description:
+      "MVP web app built with Next.js, Zustand, and SCSS for modern E-commerce workflows.",
+    tech: ["Next.js", "Nest.js", "Zustand", "SCSS" ],
+    demo: "https://digidish-two.vercel.app/",
+    code: "https://https://github.com/RogueDevTech/digidish-frontend",
+    image: Clubarant,
   },
   {
-    title: 'TaskMaster',
-    description: 'A fullstack task management app with auth, filters, and dashboard views using NestJS + PostgreSQL.',
-    tech: ['NestJS', 'PostgreSQL', 'React'],
-    link: 'https://taskmaster-app.vercel.app',
+    title: "Music Play",
+    description:
+      "Frontend music  app built with React caling music api  .",
+    tech: ["Reat.js", "Css", "Axios", "TailwindCSS"],
+    demo: "https://music-demo-app.vercel.app/",
+    code: "https://github.com/harteyhitman/music-demo-app",
+    image: MusicPlay,
+  },
+  {
+    title: "Media Search",
+    description:
+      "Responsive Search Media with audios and images  data fetching using Axios.",
+    tech: ["Next.js","Nest.js", "Axios", "TailwindCSS"],
+    demo: "https://mediaseach.vercel.app/",
+    code: "https://github.com/harteyhitman/media-search-fulstack",
+    image: MediaImg,
   },
 ]
 
@@ -43,6 +61,11 @@ export default function ProjectsPage() {
             transition={{ delay: index * 0.1 }}
           >
             <h2 className="text-2xl font-semibold mb-2 text-white">{project.title}</h2>
+               <Image
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-auto rounded-lg mb-4"
+                        />
             <p className="text-gray-400 mb-3">{project.description}</p>
             <div className="flex gap-2 flex-wrap mb-4">
               {project.tech.map((tech, idx) => (
@@ -51,14 +74,26 @@ export default function ProjectsPage() {
                 </span>
               ))}
             </div>
-            <a
-              href={project.link}
-              className="text-sm text-sky-400 underline hover:text-sky-500"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Live
-            </a>
+            <div className="flex gap-3">
+              {project.demo && (
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  className="text-sm text-sky-400 hover:underline"
+                >
+                  Live Demo
+                </a>
+              )}
+              {project.code && (
+                <a
+                  href={project.code}
+                  target="_blank"
+                  className="text-sm text-gray-400 hover:underline"
+                >
+                  GitHub
+                </a>
+              )}
+            </div>
           </motion.div>
         ))}
       </div>

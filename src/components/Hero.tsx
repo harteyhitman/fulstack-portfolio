@@ -11,7 +11,7 @@ const fadeInUp = {
 
 export default function Hero() {
   return (
-    <section className="px-5 gap-22 flex flex-col md:flex-row items-left justify-left md:justify-left  md:gap-32 md:py-10">
+    <section className="px-5 gap-22 flex flex-col md:flex-row items-left justify-left md:justify-left  md:gap-42 md:py-10 md:px-20">
       {/* Text Block */}
       <div className="md:text-left text-center  space-y-6">
         <motion.h1

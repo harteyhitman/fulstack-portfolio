@@ -43,7 +43,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-14 px-4 md:px-0 justify-center items-center"
+      className="py-14 px-4  justify-center items-center md:px-20"
     >
       <motion.h2
         className="text-3xl md:text-4xl font-bold text-center md:text-left mb-12"

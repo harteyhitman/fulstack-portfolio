@@ -13,9 +13,9 @@ export default function Navbar() {
   const pathname = usePathname()
 
   return (
-    <header className="hidden lg:block sticky top-0 z-50 bg-[#0F0F0F]/80 backdrop-blur-md border-b border-gray-800">
+    <header className="hidden lg:block sticky top-0 z-50 bg-[#0F0F0F]/80 backdrop-blur-md border-b border-gray-800 md:px-20">
       <nav className="max-w-6xl mx-auto flex justify-between items-center py-8 px-6">
-        <span className="font-bold text-xl tracking-tight">Azeez Oyegoke</span>
+        <span className="font-bold text-xl tracking-tight"><Link href='/'> Azeez Oyegoke</Link></span>
         <ul className="flex space-x-6 text-sm">
           {links.map((link) => (
             <li key={link.href}>

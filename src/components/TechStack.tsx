@@ -35,7 +35,7 @@ export default function TechStack() {
       </motion.h2>
 
       <motion.div
-        className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 text-white place-items-center"
+        className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 text-white place-items-center md:px-20"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.8 }}
