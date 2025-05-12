@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Clubarant from "../../public/clubarant.png";
 import MusicPlay from "../../public/musicplay.png";
 import MediaImg from "../../public/media-img.png";
+import BankApp from "../../public/bank-app.png";
 import Image from "next/image";
 
 const projects = [
@@ -33,6 +34,15 @@ const projects = [
     demo: "https://mediaseach.vercel.app/",
     code: "https://github.com/harteyhitman/media-search-fulstack",
     image: MediaImg,
+  },
+  {
+    title: "bank-app-indol-one",
+    description:
+      "Responsive design bank app built with React and SCSS Only designs they are no much functionalities.",
+    tech: ["React.js", "", "TailwindCSS"],
+    demo: "https://bank-app-indol-one.vercel.app/",
+    code: "https://github.com/harteyhitman/bank-app",
+    image: BankApp,
   },
   // Add more projects here
 ];
