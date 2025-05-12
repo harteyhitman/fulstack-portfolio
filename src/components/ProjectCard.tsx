@@ -5,6 +5,7 @@ import Clubarant from "../../public/clubarant.png";
 import MusicPlay from "../../public/musicplay.png";
 import MediaImg from "../../public/media-img.png";
 import BankApp from "../../public/bank-app.png";
+import RentIt from "../../public/rent-it.png";
 import Image from "next/image";
 
 const projects = [
@@ -38,11 +39,20 @@ const projects = [
   {
     title: "bank-app-indol-one",
     description:
-      "Responsive design bank app built with React and SCSS Only designs they are no much functionalities.",
+      "Responsive design bank app built with React and SCSS  designs Only.",
     tech: ["React.js", "", "TailwindCSS"],
     demo: "https://bank-app-indol-one.vercel.app/",
     code: "https://github.com/harteyhitman/bank-app",
     image: BankApp,
+  },
+  {
+    title: "estate-platform",
+    description:
+      "Real estate platform built with React.js and SCSS A concept to promote flexibility for leasing and buying of Properties .",
+    tech: ["React.js","CSS"],
+    demo: "https://rent-it-real-estate-platform.vercel.app/",
+    code: "https://github.com/harteyhitman/Real-estate-project",
+    image: RentIt ,
   },
   // Add more projects here
 ];
