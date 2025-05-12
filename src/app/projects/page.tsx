@@ -5,9 +5,12 @@ import { motion } from 'framer-motion'
 import Clubarant from "../../../public/clubarant.png";
 import MusicPlay from "../../../public/musicplay.png";
 import MediaImg from "../../../public/media-img.png";
+import BankApp from "../../public/bank-app.png";
+import RentIt from "../../public/rent-it.png";
+import GithubFinder from "../../public/github-finder.png";
 import Image from "next/image";
 const projects = [
-{
+  {
     title: "Clubarant",
     description:
       "MVP web app built with Next.js, Zustand, and SCSS for modern E-commerce workflows.",
@@ -33,6 +36,33 @@ const projects = [
     demo: "https://mediaseach.vercel.app/",
     code: "https://github.com/harteyhitman/media-search-fulstack",
     image: MediaImg,
+  },
+  {
+    title: "GithubFinder",
+    description:
+      "GithubFinder is a web app that allows users to search for GitHub users and view their profiles, repositories, and followers. It is built with React.js and uses the GitHub API for data fetching.",
+    tech: ["Next.js", "Axios", "TailwindCSS", "SCSS"],
+    demo: "https://github-finder-tau-gilt.vercel.app/",
+    code: "https://github.com/harteyhitman/github-finder",
+    image: GithubFinder,
+  },
+  {
+    title: "bank-app-indol-one",
+    description:
+      "Responsive design bank app built with React and SCSS  designs Only.",
+    tech: ["React.js", "", "TailwindCSS"],
+    demo: "https://bank-app-indol-one.vercel.app/",
+    code: "https://github.com/harteyhitman/bank-app",
+    image: BankApp,
+  },
+  {
+    title: "estate-platform",
+    description:
+      "Real estate platform built with React.js and SCSS A concept to promote flexibility for leasing and buying of Properties .",
+    tech: ["React.js","CSS"],
+    demo: "https://rent-it-real-estate-platform.vercel.app/",
+    code: "https://github.com/harteyhitman/Real-estate-project",
+    image: RentIt ,
   },
 ]
 
