@@ -6,7 +6,7 @@ import MusicPlay from "../../public/musicplay.png";
 import MediaImg from "../../public/media-img.png";
 import BankApp from "../../public/bank-app.png";
 import RentIt from "../../public/rent-it.png";
-import GithubFinder from "../../public/rent-it.png";
+import GithubFinder from "../../public/github-finder.png";
 import Image from "next/image";
 
 const projects = [
