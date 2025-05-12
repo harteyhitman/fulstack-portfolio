@@ -6,6 +6,7 @@ import MusicPlay from "../../public/musicplay.png";
 import MediaImg from "../../public/media-img.png";
 import BankApp from "../../public/bank-app.png";
 import RentIt from "../../public/rent-it.png";
+import GithubFinder from "../../public/rent-it.png";
 import Image from "next/image";
 
 const projects = [
@@ -35,6 +36,15 @@ const projects = [
     demo: "https://mediaseach.vercel.app/",
     code: "https://github.com/harteyhitman/media-search-fulstack",
     image: MediaImg,
+  },
+  {
+    title: "GithubFinder",
+    description:
+      "GithubFinder is a web app that allows users to search for GitHub users and view their profiles, repositories, and followers. It is built with React.js and uses the GitHub API for data fetching.",
+    tech: ["Next.js", "Axios", "TailwindCSS", "SCSS"],
+    demo: "https://github-finder-tau-gilt.vercel.app/",
+    code: "https://github.com/harteyhitman/github-finder",
+    image: GithubFinder,
   },
   {
     title: "bank-app-indol-one",
