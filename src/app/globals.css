@@ -22,7 +22,7 @@ body {
 }
 /* Dark Theme override */
 body.dark {
-  background: #0D0E13;
+  background: #0d0e13;
   color: #ffffff;
 }
 /* Light Theme (default) */
@@ -31,13 +31,20 @@ body.dark {
   color: #0D0E13 important;
 } */
 
-
-
 /* Optional nav-specific overrides */
 body.dark .nav-link {
   color: #ffffff;
 }
 
 body.dark .nav-link:hover {
-  color: #0D0E13;
+  color: #0d0e13;
 }
+
+.about {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
